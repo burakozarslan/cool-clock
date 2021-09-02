@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./assets/icon.png">
+	<link rel="stylesheet" href="./style.css">
+	<script type="text/javascript" src="./script.js"></script>
+	<title>Cool Clock</title>
+</head>
+<body onload="startInterval()">
+	<div class="time__wrapper">
+		<div id="hour-1" class="number__container m-1">
+			<div class="number">0</div>
+			<div class="number active">1</div>
+			<div class="number">2</div>
+		</div>
+
+		<div id="hour-2" class="number__container m-1">
+			<div class="number">0</div>
+			<div class="number">1</div>
+			<div class="number">2</div>
+			<div class="number">3</div>
+			<div class="number">4</div>
+			<div class="number">5</div>
+			<div class="number">6</div>
+			<div class="number">7</div>
+			<div class="number">8</div>
+			<div class="number">9</div>
+		</div>
+
+		<span>:</span>
+
+		<div id="minute-1" class="number__container m-4">
+			<div class="number">0</div>
+			<div class="number">1</div>
+			<div class="number">2</div>
+			<div class="number">3</div>
+			<div class="number">4</div>
+			<div class="number">5</div>
+		</div>
+
+		<div id="minute-2" class="number__container m-5">
+			<div class="number">0</div>
+			<div class="number">1</div>
+			<div class="number">2</div>
+			<div class="number">3</div>
+			<div class="number">4</div>
+			<div class="number">5</div>
+			<div class="number">6</div>
+			<div class="number">7</div>
+			<div class="number">8</div>
+			<div class="number">9</div>
+		</div>
+
+		<span>:</span>
+
+		<div id="second-1" class="number__container m-1">
+			<div class="number">0</div>
+			<div class="number">1</div>
+			<div class="number">2</div>
+			<div class="number">3</div>
+			<div class="number">4</div>
+			<div class="number">5</div>
+		</div>
+
+		<div id="second-2" class="number__container m-9">
+			<div class="number">0</div>
+			<div class="number">1</div>
+			<div class="number">2</div>
+			<div class="number">3</div>
+			<div class="number">4</div>
+			<div class="number">5</div>
+			<div class="number">6</div>
+			<div class="number">7</div>
+			<div class="number">8</div>
+			<div class="number">9</div>
+		</div>
+	</div>
+	
+	<footer>
+		<h6>
+			<a href="https://burakozarslan.com" target="_blank">Burak Ozarslan</a>
+		</h6>
+	</footer>
+
+	<script>
+		updateDate();
+		function startInterval() {
+			setInterval(updateDate, 1000);
+		}
+	</script>
+
+</body>
+</html>
